@@ -1,0 +1,37 @@
+// _config.scss
+
+$light-color: #f4f4f4;
+$primary-color: #f5f5f5;
+$secondary-color: #000000;
+$tertiary-color: #b89767;
+$accent-color: #2de9e6;
+$error-color: #ff7011;
+
+
+// How many columns and gap/gutter spacing in px
+$grid-gutter     :  10px !default;
+$grid-columns    :  12;
+$full-width      :  100%;  // for full width design
+$centered-width  :  80vw;  // for center based on pixel width
+$width-type      :  $full-width;
+
+// For-loop to make grid-columns with calc
+@for $col-number from 1 through $grid-columns {
+  .outer-col-#{$col-number} {
+    $col-width: $col-number / $grid-columns;
+    width: calc(100% * #{$col-width} - #{$grid-gutter} * (1 - #{$col-width}));
+  //  background-color: #ccc;
+    // Dont use padding and margin : use p-1 or mx-1 on HTML element
+    display:flex;
+  }
+}
+
+@for $col-number from 1 through $grid-columns {
+  .inner-col-#{$col-number} {
+    $col-width: $col-number / $grid-columns;
+    width: calc(100% * #{$col-width} - 0px * (1 - #{$col-width}));
+  //  background-color: #ccc;
+    // Dont use padding and margin : use p-1 or mx-1 on HTML element
+    display:flex;
+  }
+}

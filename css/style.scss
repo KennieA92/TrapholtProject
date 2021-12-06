@@ -1,0 +1,79 @@
+@import 'config';
+@import 'typography'; // Heeeeyyy, im the typography, and also - luuucy im hooommmee!
+@import 'colors'; // just to be like da cool kids
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0px; 
+}
+
+body {
+  color: $secondary-color ;
+  background-color: $light-color;
+  font-family: $font-stack;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  @import 'dark'; // For dark-mode changes, go to _dark.scss
+}
+
+a {
+  text-decoration: none;
+  color: $secondary-color;
+}
+
+header {
+  background-color: $primary-color;
+  display: flex;
+  flex-wrap: wrap;
+  gap: $grid-gutter;
+  max-width: $width-type; // Change for full width or a set width -> in config file
+  width: $width-type;
+  
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    ul {
+      display: flex;
+      list-style-type: none;
+      li {
+        a {
+          color: $primary-color;
+          &:hover {
+            color: $light-color;
+          }
+        }
+      }
+    }
+  }
+}
+
+main {
+ // padding:10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: $grid-gutter;
+  max-width: $width-type; // Change for full width or a set width -> in config file
+  width: $width-type;
+  // import pages?
+}
+
+section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: $grid-gutter;
+  max-width: $width-type; // Change for full width or a set width -> in config file
+  width: $width-type;
+}
+
+img {
+  width: 100%;
+}
+
+
+@import 'utilities';
+@import 'buttons';
+@import 'mobile';

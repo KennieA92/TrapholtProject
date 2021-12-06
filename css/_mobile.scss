@@ -1,0 +1,23 @@
+// _mobile.scss
+@media(max-width: 640px) {
+
+    @for $i from 1 through $grid-columns {
+      .outer-col-#{$i} {
+        width:100vw;      
+        flex-direction: column; 
+        
+      }
+    }
+  
+    @for $i from 1 through $grid-columns {
+      .inner-col-#{$i} {
+        width:100vw;     
+        flex-direction: column; 
+      }
+    }
+  
+    main {
+      width:100%;
+      max-width:100%;
+    }
+  }
