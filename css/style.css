@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 .outer-col-1 {
   width: calc(100% * 0.08333 - 0px * (1 - 0.08333));
   display: -webkit-box;
@@ -509,6 +509,7 @@ header .nav-bar .nav-menu-box .nav-utilities-panel .language-support a {
           flex-direction: column;
   height: 835px;
   background-color: #000000;
+  padding-bottom: 104px;
 }
 
 .exhibition-section .exhibition-header {
@@ -550,13 +551,11 @@ header .nav-bar .nav-menu-box .nav-utilities-panel .language-support a {
       -ms-flex-pack: justify;
           justify-content: space-between;
   height: 536px;
-  padding-bottom: 104px;
 }
 
 .exhibition-section .exhibition-main-container .exhibition-container1 {
-  height: 515px;
-  width: 515px;
-  padding-bottom: 104px;
+  height: 520px;
+  width: 520px;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url("/images/exhibition_1.jpg");
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("/images/exhibition_1.jpg");
   background-repeat: no-repeat;
@@ -564,9 +563,8 @@ header .nav-bar .nav-menu-box .nav-utilities-panel .language-support a {
 }
 
 .exhibition-section .exhibition-main-container .exhibition-container2 {
-  height: 100%;
-  width: 515px;
-  padding-bottom: 104px;
+  height: 520px;
+  width: 520px;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url("/images/exhibition_2.jpg");
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("/images/exhibition_2.jpg");
   background-repeat: no-repeat;
@@ -574,12 +572,72 @@ header .nav-bar .nav-menu-box .nav-utilities-panel .language-support a {
 }
 
 .exhibition-section .exhibition-main-container .exhibition-container3 {
-  height: 100%;
-  width: 515px;
-  padding-bottom: 104px;
+  height: 520px;
+  width: 520px;
   background: url("/images/exhibition_3.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.kubeflex-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 808px;
+  background-color: #f5f5f5;
+}
+
+.kubeflex-section .kubeflex-main-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.kubeflex-section .kubeflex-main-container img {
+  width: 802px;
+  height: 600px;
+}
+
+.kubeflex-section .kubeflex-main-container .kubeflex-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.kubeflex-section .kubeflex-main-container .kubeflex-content h1 {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.kubeflex-section .kubeflex-main-container .kubeflex-content span {
+  color: #b89767;
+}
+
+.kubeflex-section .kubeflex-main-container .kubeflex-content p {
+  font-size: 15px;
+  padding: 5px 0;
+  font-weight: 500;
+}
+
+.kubeflex-section .kubeflex-main-container .kubeflex-content .kubeflex-button {
+  border: solid 1px #b89767;
+  width: 164px;
+  height: 40px;
+  color: #b89767;
+  font-size: 15px;
 }
 
 .m-1 {

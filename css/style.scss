@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
 @import 'config';
 @import 'typography'; // Heeeeyyy, im the typography, and also - luuucy im hooommmee!
 @import 'colors'; // just to be like da cool kids
@@ -159,7 +159,8 @@ header {
     align-items: center;
     flex-direction: column;
     height: 835px;
-    background-color: $secondary-color;
+    background-color: $secondary-color;    
+    padding-bottom: 104px;
     .exhibition-header{
         display: flex;
         height:20px;
@@ -182,11 +183,9 @@ header {
         display: flex;
         justify-content: space-between;
         height: 536px;
-        padding-bottom: 104px;
     .exhibition-container1{
-        height: 515px;
-        width: 515px;
-        padding-bottom: 104px;
+        height: 520px;
+        width: 520px;
         background:  linear-gradient(
         rgba(0, 0, 0, 0.6), 
         rgba(0, 0, 0, 0.6)
@@ -196,9 +195,8 @@ header {
         background-size: cover;
     }
     .exhibition-container2{
-        height: 100%;
-        width: 515px;
-        padding-bottom: 104px;
+        height: 520px;
+        width: 520px;
         background:  linear-gradient(
         rgba(0, 0, 0, 0.6), 
         rgba(0, 0, 0, 0.6)
@@ -208,14 +206,52 @@ header {
         background-size: cover;
     }
     .exhibition-container3{
-        height: 100%;
-        width: 515px;
-        padding-bottom: 104px;
+        height: 520px;
+        width: 520px;
         background: url("/images/exhibition_3.jpg");
         background-repeat: no-repeat;
         background-size: cover;
     }
 }
+}
+
+.kubeflex-section{
+    display: flex;
+    justify-content: center;
+    height: 808px;
+    background-color: $primary-color;
+    .kubeflex-main-container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        img{
+            width: 802px;
+            height: 600px;
+        }
+        .kubeflex-content{
+            display: flex;
+            flex-direction: column;
+            h1{
+                font-size: 22px;
+                font-weight: 600;
+            }
+            span{
+                color: $tertiary-color;
+            }
+            p{
+                font-size: 15px;
+                padding: 5px 0;
+                font-weight: 500;
+            }
+            .kubeflex-button {
+                border: solid 1px #b89767;
+                width: 164px;
+                height: 40px;
+                color: $tertiary-color;
+                font-size: 15px;
+            }
+        }
+    }
 }
 
 
