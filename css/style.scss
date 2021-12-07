@@ -31,6 +31,7 @@ img {
     width: 100%;
   }
 
+
 header {
     background-color: $primary-color;
     height: 184px;
@@ -178,7 +179,10 @@ header {
         }
     }
 }
-
+#exhibition-header {
+    color:$primary-color;
+    font-size: 32px;
+}
 .exhibition-section{
     display: flex;
     align-items: center;
@@ -188,16 +192,19 @@ header {
     padding-bottom: 104px;
     .exhibition-header{
         display: flex;
-        height:20px;
+        height:32px;
+        align-items: center;
         justify-content: space-between;
         padding-top: 101px;
         padding-bottom: 50px;
         .view-all-exhibitions{
             display: flex;
-            justify-content: space-between;
             align-items: center;
-            font-size: 20px;
-            color: $tertiary-color;
+            p {
+                font-size: 24px;
+                color: $tertiary-color;   
+                padding-right: 10px;             
+            }
             img{
                 width: 14.23px;
                 height: 23.04px;
@@ -209,36 +216,77 @@ header {
         justify-content: space-between;
         height: 536px;
     .exhibition-container1{
+        animation: moveitup 5s;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
         height: 520px;
         width: 520px;
-        background:  linear-gradient(
-        rgba(0, 0, 0, 0.1), 
-        rgba(0, 0, 0, 0.1)
-        ),
-        url("/images/exhibition_1.jpg");
+        background: url("/images/exhibition_1.jpg");
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
+        .exhibition-info {
+            background-color: #ffffff10;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding-left: 24px;
+            height: 96px;
+            color: $primary-color;
+            h1{
+                font-size: 24px;
+                font-weight: 500;
+            }
+        }
     }
     .exhibition-container2{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
         height: 520px;
         width: 520px;
-        background:  linear-gradient(
-        rgba(0, 0, 0, 0.1), 
-        rgba(0, 0, 0, 0.1)
-        ),
-        url("/images/exhibition_2.jpg");
+        background: url("/images/exhibition_2.jpg");
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
+        .exhibition-info {
+            background-color: #ffffff10;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding-left: 24px;
+            height: 96px;
+            color: $primary-color;
+            h1{
+                font-size: 24px;
+                font-weight: 500;
+            }
+        }
     }
     .exhibition-container3{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
         height: 520px;
         width: 520px;
         background: url("/images/exhibition_3.jpg");
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
+        .exhibition-info {
+            background-color: #ffffff10;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding-left: 24px;
+            height: 96px;
+            color: $primary-color;
+            h1{
+                font-size: 24px;
+                font-weight: 500;
+            }
+        }
     }
 }
 }
@@ -260,7 +308,7 @@ header {
             display: flex;
             flex-direction: column;
             h1{
-                font-size: 22px;
+                font-size: 32px;
                 font-weight: 600;
             }
             span{
@@ -268,7 +316,265 @@ header {
             }
             p{
                 font-size: 15px;
-                padding: 5px 0;
+                padding-bottom: 5px;
+                font-weight: 500;
+            }
+            .kubeflex-button {
+                border: solid 1px #b89767;
+                width: 164px;
+                height: 40px;
+                color: $tertiary-color;
+                font-size: 15px;
+            }
+        }
+    }
+}
+#exhibition-header {
+    color:$primary-color;
+    font-size: 32px;
+}
+.exhibition-section{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 835px;
+    background-color: $secondary-color;    
+    padding-bottom: 104px;
+    .exhibition-header{
+        display: flex;
+        height:32px;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 101px;
+        padding-bottom: 50px;
+        .view-all-exhibitions{
+            display: flex;
+            align-items: center;
+            p {
+                font-size: 24px;
+                color: $tertiary-color;   
+                padding-right: 10px;             
+            }
+            img{
+                width: 14.23px;
+                height: 23.04px;
+            }
+        }
+    }
+    .exhibition-main-container{
+        display: flex;
+        justify-content: space-between;
+        height: 536px;
+    .exhibition-container1{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        height: 520px;
+        width: 520px;
+        background: url("/images/exhibition_1.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        .exhibition-info {
+            background-color: #00000055;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding-left: 24px;
+            height: 96px;
+            color: $primary-color;
+            h1{
+                font-size: 24px;
+                font-weight: 500;
+            }
+        }
+    }
+    .exhibition-container2{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        height: 520px;
+        width: 520px;
+        background: url("/images/exhibition_2.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        .exhibition-info {
+            background-color: #00000055;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding-left: 24px;
+            height: 96px;
+            color: $primary-color;
+            h1{
+                font-size: 24px;
+                font-weight: 500;
+            }
+        }
+    }
+    .exhibition-container3{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        height: 520px;
+        width: 520px;
+        background: url("/images/exhibition_3.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        .exhibition-info {
+            background-color: #00000055;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding-left: 24px;
+            height: 96px;
+            color: $primary-color;
+            h1{
+                font-size: 24px;
+                font-weight: 500;
+            }
+        }
+    }
+}
+}
+#activity-header {
+    color:$primary-color;
+    font-size: 32px;
+}
+.activity-section{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 835px;
+    background-color: $secondary-color;    
+    padding-bottom: 104px;
+    .activity-header{
+        display: flex;
+        height:32px;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 101px;
+        padding-bottom: 50px;
+        .view-all-activities{
+            display: flex;
+            align-items: center;
+            p {
+                font-size: 24px;
+                color: $tertiary-color;   
+                padding-right: 10px;             
+            }
+            img{
+                width: 14.23px;
+                height: 23.04px;
+            }
+        }
+    }
+    .activity-main-container{
+        display: flex;
+        justify-content: space-between;
+        height: 536px;
+    .activity-container1{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        height: 520px;
+        width: 520px;
+        background: url("/images/activity_1.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        .activity-info {
+            background-color: #00000055;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding-left: 24px;
+            height: 96px;
+            color: $primary-color;
+            h1{
+                font-size: 24px;
+                font-weight: 500;
+            }
+        }
+    }
+    .activity-container2{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        height: 520px;
+        width: 520px;
+        background: url("/images/activity_2.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        .activity-info {
+            background-color: #00000055;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding-left: 24px;
+            height: 96px;
+            color: $primary-color;
+            h1{
+                font-size: 24px;
+                font-weight: 500;
+            }
+        }
+    }
+    .activity-container3{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        height: 520px;
+        width: 520px;
+        background: url("/images/activity_3.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        .activity-info {
+            background-color: #00000055;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding-left: 24px;
+            height: 96px;
+            color: $primary-color;
+            h1{
+                font-size: 24px;
+                font-weight: 500;
+            }
+        }
+    }
+}
+}
+.cafe-section{
+    display: flex;
+    justify-content: center;
+    height: 704px;
+    background-color: $primary-color;
+    .cafe-main-container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        img{
+            width: 950px;
+            height: 600px;
+        }
+        .cafe-content{
+            display: flex;
+            flex-direction: column;
+            h1{
+                font-size: 32px;
+                font-weight: 600;
+            }
+            span{
+                color: $tertiary-color;
+            }
+            p{
+                font-size: 15px;
+                padding-bottom: 5px;
                 font-weight: 500;
             }
             .kubeflex-button {
@@ -282,7 +588,44 @@ header {
     }
 }
 
-
+.shop-section{
+    display: flex;
+    justify-content: center;
+    height: 704px;
+    background-color: $primary-color;
+    .shop-main-container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        img{
+            width: 950px;
+            height: 600px;
+            }
+        .shop-content{
+            display: flex;
+            flex-direction: column;
+            h1{
+                font-size: 32px;
+                font-weight: 600;
+            }
+            span{
+                color: $tertiary-color;
+            }
+            p{
+                font-size: 15px;
+                padding-bottom: 5px;
+                font-weight: 500;
+            }
+            .kubeflex-button {
+                border: solid 1px #b89767;
+                width: 164px;
+                height: 40px;
+                color: $tertiary-color;
+                font-size: 15px;
+            }
+        }
+    }
+}
 
 @import 'utilities';
 @import 'buttons';
