@@ -597,6 +597,7 @@ header {
         display: flex;
         align-items: center;
         justify-content: space-between;
+        padding-bottom: 50px;
         img{
             width: 950px;
             height: 600px;
@@ -627,6 +628,12 @@ header {
     }
 }
 
+.footer-section{
+    display: flex;
+    height: 361px;
+    justify-content: center;
+    background: $secondary-color;
+}
 @import 'utilities';
 @import 'buttons';
 @import 'mobile';

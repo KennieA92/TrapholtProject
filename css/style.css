@@ -1246,6 +1246,7 @@ header .nav-bar .nav-menu-box .nav-utilities-panel .language-support a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding-bottom: 50px;
 }
 
 .shop-section .shop-main-container img {
@@ -1284,6 +1285,17 @@ header .nav-bar .nav-menu-box .nav-utilities-panel .language-support a {
   height: 40px;
   color: #b89767;
   font-size: 15px;
+}
+
+.footer-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 361px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #000000;
 }
 
 .m-1 {
