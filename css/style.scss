@@ -112,15 +112,18 @@ header {
         }   
         .nav-utilities-panel {
             display: flex;
-            justify-content: space-between;
+            justify-content: flex-end;
             align-items: center;           
             .search-btn{
+                display: flex;
+                justify-self: flex-end;
                 height: 24px;
                 width: 24px;
             }
             .language-support{
                 display: flex;
                 align-items: center;
+                justify-content: flex-end;
                 font-weight: 600;
                 color: $primary-color;
                 a{
@@ -632,6 +635,7 @@ header {
     display: flex;
     height: 361px;
     justify-content: center;
+    align-items: center;
     background: $secondary-color;
 }
 @import 'utilities';
