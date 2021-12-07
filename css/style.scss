@@ -79,8 +79,33 @@ header {
             justify-content: space-between;
             
         .nav-menu-item {
+            position: relative;
+            a {
+                display: block;
+                padding: 10px;
+              } 
             .nav-submenu {
                 display: none;
+                .nav-submenu-item {
+                    padding-top: 10px;
+                    padding-bottom: 2px;
+                    width: 100vw;
+                }
+            }
+            &:hover{
+                .nav-submenu{
+                    z-index: 5;
+                    top: 40px;
+                    display:flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    flex-wrap: wrap;
+                    width: max-content;
+                    list-style-type: none;  
+                    position: absolute;
+                    background-color: $secondary-color; 
+                    
+                }
             }
         }
         }   
@@ -187,22 +212,24 @@ header {
         height: 520px;
         width: 520px;
         background:  linear-gradient(
-        rgba(0, 0, 0, 0.6), 
-        rgba(0, 0, 0, 0.6)
+        rgba(0, 0, 0, 0.1), 
+        rgba(0, 0, 0, 0.1)
         ),
         url("/images/exhibition_1.jpg");
         background-repeat: no-repeat;
+        background-position: center;
         background-size: cover;
     }
     .exhibition-container2{
         height: 520px;
         width: 520px;
         background:  linear-gradient(
-        rgba(0, 0, 0, 0.6), 
-        rgba(0, 0, 0, 0.6)
+        rgba(0, 0, 0, 0.1), 
+        rgba(0, 0, 0, 0.1)
         ),
         url("/images/exhibition_2.jpg");
         background-repeat: no-repeat;
+        background-position: center;
         background-size: cover;
     }
     .exhibition-container3{
@@ -210,6 +237,7 @@ header {
         width: 520px;
         background: url("/images/exhibition_3.jpg");
         background-repeat: no-repeat;
+        background-position: center;
         background-size: cover;
     }
 }
