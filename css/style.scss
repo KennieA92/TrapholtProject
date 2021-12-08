@@ -2,6 +2,7 @@
 @import 'config';
 @import 'typography'; // Heeeeyyy, im the typography, and also - luuucy im hooommmee!
 @import 'colors'; // just to be like da cool kids
+@import 'tickets-style';
 
 
 * {
@@ -168,6 +169,9 @@ header {
                 color: $primary-color;
                 border-style: none;
                 font-size: 30px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
             }
         }
         .covid-button{
