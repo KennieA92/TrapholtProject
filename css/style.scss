@@ -169,7 +169,7 @@ header {
             left: 0;
             top: 0;
             height: 75vh;
-            width: 100vw;
+            width: 100%;
             z-index: -5542542;
             object-fit: cover;
             filter: brightness(50%);
@@ -177,11 +177,12 @@ header {
         .hero-info-panel{
             display: flex;
             flex-direction: column;
+            justify-content: flex-end;
             max-width: 761px;
             height: 374px;
             margin-bottom: 104px;
             h1{
-                font-size: 65px;
+                font-size: 60px;
                 color: $primary-color;
             }
         }
@@ -301,7 +302,6 @@ header {
                 color: $tertiary-color;
             }
             p{
-                font-size: 15px;
                 padding-bottom: 5px;
                 font-weight: 500;
             }
