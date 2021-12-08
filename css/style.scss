@@ -32,6 +32,23 @@ img {
     width: 100%;
   }
 
+@mixin box-container-background {    
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.burgermenu{
+    display: none;
+}
+.top-info-panel-language{
+    display: none;
+}
+.mobile-logo{
+    display: none;
+}
+.btn-mobile-covid{
+    display: none;
+}
 
 header {
     background-color: $primary-color;
@@ -48,9 +65,12 @@ header {
       align-items: center;
       height: 120px;
       .logo{
-          height: 100px;
+          height: 120px;
+          max-width: 330px;
       }
       .top-info-panel {
+          display: flex;
+          justify-content: flex-end;
           .titles{
               p{
                   font-weight: 600;
@@ -91,7 +111,6 @@ header {
                 .nav-submenu-item {
                     padding-top: 10px;
                     padding-bottom: 2px;
-                    width: 100vw;
                 }
             }
             &:hover{
@@ -136,225 +155,109 @@ header {
     }
   }
 }
-
 .hero-section{
     display: flex;
+    position: relative;
     justify-content: center;
-    height: 720px;
-    width: 100%;
-    background:  linear-gradient(
-        rgba(0, 0, 0, 0.6), 
-        rgba(0, 0, 0, 0.6)
-      ),
-      url("/images/hero.jpg");
+    height: 75vh;
     background-repeat: no-repeat;
-    background-size: cover;
-    .hero-info{
+    background-size: cover;    
+    .hero-info{        
         align-items: flex-end;
         justify-content: space-between;
+        video{
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 75vh;
+            width: 100%;
+            z-index: -5542542;
+            object-fit: cover;
+            filter: brightness(50%);
+        }
         .hero-info-panel{
             display: flex;
             flex-direction: column;
-            width: 761px;
-            height: 389px;
+            justify-content: flex-end;
+            max-width: 761px;
+            height: 374px;
             margin-bottom: 104px;
             h1{
-                font-size: 65px;
+                font-size: 60px;
                 color: $primary-color;
-            }
-            .ticket-button{
-                width: 401px;
-                height: 80px;
-                background-color: $tertiary-color;
-                color: $primary-color;
-                border-style: none;
-                font-size: 30px;
-                display: flex;
-                align-items: center;
-                justify-content: center;
             }
         }
-        .covid-button{
-            width: 260px;
-            padding: 22px 0px;
-            margin-bottom: 140px;
+    }
+}
+#exhibition-header {
+    color:$primary-color;
+    font-size: 32px;
+}
+.box-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 520px;
+    width: 520px;
+    .box-info {
+        background-color: #03030355;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 24px;
+        height: 96px;
+        color: $primary-color;
+        h1{
             font-size: 24px;
-            border-color: $tertiary-color;
-            border-style: dashed;
-            color: $tertiary-color;
-            background-color: #00000000;
+            font-weight: 500;
         }
     }
 }
-#exhibition-header {
-    color:$primary-color;
-    font-size: 32px;
+    
+#exhibition-container1{
+    background: url("/images/exhibition_1.jpg");    
+    @include box-container-background();
 }
-.exhibition-section{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    height: 835px;
-    background-color: $secondary-color;    
-    padding-bottom: 104px;
-    .exhibition-header{
-        display: flex;
-        height:32px;
-        align-items: center;
-        justify-content: space-between;
-        padding-top: 101px;
-        padding-bottom: 50px;
-        .view-all-exhibitions{
-            display: flex;
-            align-items: center;
-            p {
-                font-size: 24px;
-                color: $tertiary-color;   
-                padding-right: 10px;             
-            }
-            img{
-                width: 14.23px;
-                height: 23.04px;
-            }
-        }
-    }
-    .exhibition-main-container{
-        display: flex;
-        justify-content: space-between;
-        height: 536px;
-    .exhibition-container1{
-        animation: moveitup 5s;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-        height: 520px;
-        width: 520px;
-        background: url("/images/exhibition_1.jpg");
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        .exhibition-info {
-            background-color: #ffffff10;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            padding-left: 24px;
-            height: 96px;
-            color: $primary-color;
-            h1{
-                font-size: 24px;
-                font-weight: 500;
-            }
-        }
-    }
-    .exhibition-container2{
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-        height: 520px;
-        width: 520px;
-        background: url("/images/exhibition_2.jpg");
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        .exhibition-info {
-            background-color: #ffffff10;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            padding-left: 24px;
-            height: 96px;
-            color: $primary-color;
-            h1{
-                font-size: 24px;
-                font-weight: 500;
-            }
-        }
-    }
-    .exhibition-container3{
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-        height: 520px;
-        width: 520px;
-        background: url("/images/exhibition_3.jpg");
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        .exhibition-info {
-            background-color: #ffffff10;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            padding-left: 24px;
-            height: 96px;
-            color: $primary-color;
-            h1{
-                font-size: 24px;
-                font-weight: 500;
-            }
-        }
-    }
+#exhibition-container2{        
+    background: url("/images/exhibition_2.jpg");
+    @include box-container-background();
 }
+#exhibition-container3{        
+    background: url("/images/exhibition_3.jpg");
+    @include box-container-background();
+}
+#activity-container1{
+    background: url("/images/activity_1.jpg");
+    @include box-container-background();
+}
+#activity-container2{        
+    background: url("/images/activity_2.jpg");
+    @include box-container-background();
+}
+#activity-container3{        
+    background: url("/images/activity_3.jpg");
+    @include box-container-background();
 }
 
-.kubeflex-section{
-    display: flex;
-    justify-content: center;
-    height: 808px;
-    background-color: $primary-color;
-    .kubeflex-main-container{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        img{
-            width: 802px;
-            height: 600px;
-        }
-        .kubeflex-content{
-            display: flex;
-            flex-direction: column;
-            h1{
-                font-size: 32px;
-                font-weight: 600;
-            }
-            span{
-                color: $tertiary-color;
-            }
-            p{
-                font-size: 15px;
-                padding-bottom: 5px;
-                font-weight: 500;
-            }
-            .kubeflex-button {
-                border: solid 1px #b89767;
-                width: 164px;
-                height: 40px;
-                color: $tertiary-color;
-                font-size: 15px;
-            }
-        }
-    }
-}
-#exhibition-header {
-    color:$primary-color;
-    font-size: 32px;
-}
-.exhibition-section{
+.section-multiple-image {    
     display: flex;
     align-items: center;
     flex-direction: column;
     height: 835px;
     background-color: $secondary-color;    
     padding-bottom: 104px;
-    .exhibition-header{
+    .box-header{    
         display: flex;
         height:32px;
         align-items: center;
         justify-content: space-between;
         padding-top: 101px;
         padding-bottom: 50px;
-        .view-all-exhibitions{
+        h1{
+            color:$primary-color;
+        font-size: 32px;
+        }
+        .view-all{
             display: flex;
             align-items: center;
             p {
@@ -368,208 +271,28 @@ header {
             }
         }
     }
-    .exhibition-main-container{
+    .main-container{
         display: flex;
         justify-content: space-between;
-        height: 536px;
-    .exhibition-container1{
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-        height: 520px;
-        width: 520px;
-        background: url("/images/exhibition_1.jpg");
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        .exhibition-info {
-            background-color: #00000055;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            padding-left: 24px;
-            height: 96px;
-            color: $primary-color;
-            h1{
-                font-size: 24px;
-                font-weight: 500;
-            }
-        }
-    }
-    .exhibition-container2{
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-        height: 520px;
-        width: 520px;
-        background: url("/images/exhibition_2.jpg");
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        .exhibition-info {
-            background-color: #00000055;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            padding-left: 24px;
-            height: 96px;
-            color: $primary-color;
-            h1{
-                font-size: 24px;
-                font-weight: 500;
-            }
-        }
-    }
-    .exhibition-container3{
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-        height: 520px;
-        width: 520px;
-        background: url("/images/exhibition_3.jpg");
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        .exhibition-info {
-            background-color: #00000055;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            padding-left: 24px;
-            height: 96px;
-            color: $primary-color;
-            h1{
-                font-size: 24px;
-                font-weight: 500;
-            }
-        }
+        height: 536px;        
+        
     }
 }
-}
-#activity-header {
-    color:$primary-color;
-    font-size: 32px;
-}
-.activity-section{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    height: 835px;
-    background-color: $secondary-color;    
-    padding-bottom: 104px;
-    .activity-header{
-        display: flex;
-        height:32px;
-        align-items: center;
-        justify-content: space-between;
-        padding-top: 101px;
-        padding-bottom: 50px;
-        .view-all-activities{
-            display: flex;
-            align-items: center;
-            p {
-                font-size: 24px;
-                color: $tertiary-color;   
-                padding-right: 10px;             
-            }
-            img{
-                width: 14.23px;
-                height: 23.04px;
-            }
-        }
-    }
-    .activity-main-container{
-        display: flex;
-        justify-content: space-between;
-        height: 536px;
-    .activity-container1{
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-        height: 520px;
-        width: 520px;
-        background: url("/images/activity_1.jpg");
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        .activity-info {
-            background-color: #00000055;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            padding-left: 24px;
-            height: 96px;
-            color: $primary-color;
-            h1{
-                font-size: 24px;
-                font-weight: 500;
-            }
-        }
-    }
-    .activity-container2{
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-        height: 520px;
-        width: 520px;
-        background: url("/images/activity_2.jpg");
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        .activity-info {
-            background-color: #00000055;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            padding-left: 24px;
-            height: 96px;
-            color: $primary-color;
-            h1{
-                font-size: 24px;
-                font-weight: 500;
-            }
-        }
-    }
-    .activity-container3{
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-        height: 520px;
-        width: 520px;
-        background: url("/images/activity_3.jpg");
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        .activity-info {
-            background-color: #00000055;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            padding-left: 24px;
-            height: 96px;
-            color: $primary-color;
-            h1{
-                font-size: 24px;
-                font-weight: 500;
-            }
-        }
-    }
-}
-}
-.cafe-section{
+.section-single-image{
     display: flex;
     justify-content: center;
     height: 704px;
     background-color: $primary-color;
-    .cafe-main-container{
+    .main-container{
         display: flex;
         align-items: center;
         justify-content: space-between;
         img{
-            width: 950px;
-            height: 600px;
+            min-height: 500px;
+            object-fit: cover;
+            background-position: center;
         }
-        .cafe-content{
+        .row-content{
             display: flex;
             flex-direction: column;
             h1{
@@ -580,61 +303,12 @@ header {
                 color: $tertiary-color;
             }
             p{
-                font-size: 15px;
                 padding-bottom: 5px;
                 font-weight: 500;
-            }
-            .kubeflex-button {
-                border: solid 1px #b89767;
-                width: 164px;
-                height: 40px;
-                color: $tertiary-color;
-                font-size: 15px;
             }
         }
     }
 }
-
-.shop-section{
-    display: flex;
-    justify-content: center;
-    height: 704px;
-    background-color: $primary-color;
-    .shop-main-container{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding-bottom: 50px;
-        img{
-            width: 950px;
-            height: 600px;
-            }
-        .shop-content{
-            display: flex;
-            flex-direction: column;
-            h1{
-                font-size: 32px;
-                font-weight: 600;
-            }
-            span{
-                color: $tertiary-color;
-            }
-            p{
-                font-size: 15px;
-                padding-bottom: 5px;
-                font-weight: 500;
-            }
-            .kubeflex-button {
-                border: solid 1px #b89767;
-                width: 164px;
-                height: 40px;
-                color: $tertiary-color;
-                font-size: 15px;
-            }
-        }
-    }
-}
-
 .footer-section{
     display: flex;
     height: 361px;
@@ -644,4 +318,6 @@ header {
 }
 @import 'utilities';
 @import 'buttons';
+@import 'tablet';
 @import 'mobile';
+

@@ -1,5 +1,5 @@
 // _mobile.scss
-@media(max-width: 640px) {
+@media(max-width: 480px) {
 
     @for $i from 1 through $grid-columns {
       .outer-col-#{$i} {
@@ -16,8 +16,163 @@
       }
     }
   
-    main {
+    body {
       width:100%;
       max-width:100%;
+      background-color: $secondary-color;
+    }
+
+    #reverse-column{
+      display: flex;
+      flex-direction: column-reverse;
+  }      
+
+    header{
+      background-color: $secondary-color;
+      height: 56px;
+       .info-bar {
+         width: 80vw;
+         display: flex;
+         flex-direction: row;
+         justify-content: space-between;
+         .logo-container {
+           display: flex;
+           flex-direction: row;
+           align-items: center;
+           width: 50vw;
+          .logo {
+            display: none;
+          }
+          .burgermenu{
+            display: flex;
+            width: 27px;
+            height: 18px;
+          }
+          .mobile-logo{
+            width: 30px;
+            margin-left: 25px;
+            display: flex;
+            img{
+              width: 40px;
+              }
+          }
+         }
+         
+        .top-info-panel{
+          width: 40px;
+          .titles{
+            display: none;
+          }
+          .content {
+            display: none;
+          }
+          .top-info-panel-language{
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            font-size: 24px;
+            color: $primary-color;
+          }
+          img {
+            height: 9px;
+            width: 18px;
+            margin-bottom: 5px;
+          }
+        }
+      }
+      .nav-bar {
+        display: none;
+      }
+      .nav-menu-item {
+        display: none;
+      }
+    }
+    .hero-section{
+      display: flex;
+      height: 750px;
+      justify-content: flex-start;
+      .hero-info{        
+        align-items: center;
+        margin-bottom: 0px;
+      video{
+        position: static;
+        height: 280px;
+        filter: brightness(100%);
+      }
+      .btn-covid {
+       display: none;
+      }
+      .btn-mobile-covid{
+       display: inline-block;
+      }
+
+      .hero-info-panel{
+        height: 400px;
+        display: flex;
+        margin-bottom: 5px;
+        width: 80vw;
+        h1{
+          font-size: 40px;
+        }
+        .btn-ticket {
+          min-height: 64px;
+          width: 80vw;
+        }
+      }
+    }
+    }
+
+    .box-container {
+      height: 200px;
+      margin: 10px 0px;
+      width: 80vw;
+    }
+    .section-multiple-image{
+      display:flex;
+      height: fit-content;
+      padding-bottom: 20px;
+      .main-container{
+        align-items: center;
+        justify-content: space-between;
+      }
+      .box-header{
+        height: 40px;
+        padding-top: 0px;
+        padding-bottom: 0px;
+        h1{
+          font-size: 24px;
+        }
+        .view-all{
+          display: none;
+        }
+      
+    }
+      
+    }
+
+    .section-single-image {
+      height: fit-content;
+      padding: 30px 0px;
+      .main-container{ 
+        height: min-content;
+        img{
+        min-height: 200px;
+        width: 80vw;
+      }
+      .row-content{  
+       align-items: center;
+        width: 80vw;     
+        padding: 15px;
+        h1{
+          font-size: 28px;
+          font-weight: 600;
+        }
+        p{
+          font-size: 16px;
+          padding-bottom: 5px;
+          font-weight: 500;
+        }
+      }
+    }
     }
   }

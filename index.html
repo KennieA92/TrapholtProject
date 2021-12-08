@@ -16,10 +16,18 @@
 <body>
     <header>
         <div class="info-bar inner-col-10">
-            <div class="logo inner-col-2">
-                <img src="images/logo.svg" alt="">
+            <div class="logo-container inner-col-6">
+                <div class="burgermenu">
+                    <img src="images/burgermenu.svg" alt="">
+                </div>
+                <div class="logo inner-col-6">
+                    <img src="images/logo.svg" alt="">
+                </div>
+                <div class="mobile-logo">
+                    <img src="images/mobilelogo.svg" alt="">
+                </div>
             </div>
-            <div class="top-info-panel inner-col-4">
+            <div class="top-info-panel inner-col-6">
                 <div class="titles">
                     <p>
                         Today's Timings:
@@ -36,11 +44,18 @@
                         Verner Panton Exhibition
                     </p>
                 </div>
+                <div class="top-info-panel-search">
+
+                </div>
+                <div class="top-info-panel-language">
+                    <p>EN</p>
+                    <a href=""><img src="images/dropdownarrow.svg" alt=""></a>
+                </div>
             </div>
         </div>
         <div class="nav-bar inner-col-12">
             <div class="nav-menu-box inner-col-10">
-                <ul class=" inner-col-6 nav-menu">
+                <ul class=" inner-col-5 nav-menu">
                     <li class="nav-menu-item"><a href="#">Visit</a>
                         <ul class="nav-submenu">
                             <li class="nav-submenu-item"><a href="">Opening hours</a></li>
@@ -66,7 +81,7 @@
                             <li class="nav-submenu-item"><a href="">Fax us maybe?</a></li>
                         </ul>
                     </li>
-                    <li class="nav-menu-item"><a href="#">Activities & Workshops</a>
+                    <li class="nav-menu-item"><a href="#">Activities</a>
                         <ul class="nav-submenu">
                             <li class="nav-submenu-item"><a href="">Email us</a></li>
                             <li class="nav-submenu-item"><a href="">Phone us</a></li>
@@ -74,7 +89,7 @@
                             <li class="nav-submenu-item"><a href="">Fax us maybe?</a></li>
                         </ul>
                     </li>
-                    <li class="nav-menu-item"><a href="#">Shop & Dine </a>
+                    <li class="nav-menu-item"><a href="#">Shop</a>
                         <ul class="nav-submenu">
                             <li class="nav-submenu-item"><a href="">Email us</a></li>
                             <li class="nav-submenu-item"><a href="">Phone us</a></li>
@@ -117,50 +132,51 @@
 
     <section id="hero" class="hero-section inner-col-12">
         <div class="hero-info inner-col-10">
+            <button class="btn-mobile-covid">covid-19 guidelines</button>
+            <video src="videos/sample-mp4-file.mp4" autoplay loop muted></video>
             <div class="hero-info-panel">
                 <h1>Museum of modern art, craft and design for all ages</h1>
-                <a href="tickets.html" class="ticket-button"> BUY TICKET </a>
+                <a href="tickets.html" class="btn-ticket"> BUY TICKET </a>
             </div>
-            <button class="covid-button">covid-19 guidelines</button>
+            <button class="btn-covid">covid-19 guidelines</button>
         </div>
     </section>
-    <section id="exhibition" class="exhibition-section inner-col-12">
-        <div class="exhibition-header inner-col-10">
-            <p id="exhibition-header">Exhibitions</p>
-            <div class="view-all-exhibitions inner-col-1">
+
+
+    <section id="exhibition" class="section-multiple-image inner-col-12">
+        <div class="box-header inner-col-10">
+            <h1>Exhibitions</h1>
+            <div class="view-all inner-col-1">
                 <p>View All</p>
                 <img src="images/sidewaysarrow.svg" alt="">
             </div>
         </div>
-        <div class="exhibition-main-container inner-col-10">
-
-
-            <div data-aos="fade-up" data-aos-easing="linear" data-aos-duration="400" class="exhibition-container1">
-                <div class="exhibition-info">
+        <div class="main-container inner-col-10">
+            <div id="exhibition-container1" class="box-container">
+                <div class="box-info">
                     <h1>Verner Panton Colors in New World</h1>
                     <p>30 SEPT 2021 - 14 AUG 2022</p>
                 </div>
             </div>
-            <div data-aos="fade-up" data-aos-easing="linear" data-aos-duration="700" class="exhibition-container2">
-                <div class="exhibition-info">
+            <div id="exhibition-container2" class="box-container">
+                <div class="box-info">
                     <h1>Mie Mørkeberg Kryptomania</h1>
                     <p>21 NOV 2021 - 09 NOV 2022</p>
                 </div>
             </div>
-            <div data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1000" class="exhibition-container3">
-                <div class="exhibition-info">
+            <div id="exhibition-container3" class="box-container">
+                <div class="box-info">
                     <h1>Trapholt Collect 2020</h1>
                     <p>21 APR 2021 - 12 DEC 2021</p>
                 </div>
             </div>
         </div>
     </section>
-    <section id="kubeflex" class="kubeflex-section inner-col-12">
-        <div class="kubeflex-main-container inner-col-10">
-            <img data-aos="fade-left" data-aos-offset="600" data-aos-easing="ease-in-sine" src="images/kubeflex.jpg"
-                alt="">
-            <div data-aos="fade-right" data-aos-offset="600" data-aos-easing="ease-in-sine" class="kubeflex-content
-                inner-col-5">
+
+    <section id="kubeflex" class="section-single-image inner-col-12">
+        <div class="main-container inner-col-10">
+            <img class="inner-col-7" src="images/kubeflex.jpg" alt="">
+            <div class="row-content inner-col-4">
                 <h1>Arne Jacobsen Kubeflex</h1>
                 <p><span>Permanent Exhibition </span></p>
                 <p>The house is called Kubeflex, as it consists of cube-shaped modules that can be
@@ -171,46 +187,47 @@
                     summer home, and since 2005 it has belonged to Trapholt. The house is the only
                     one of its kind and is decorated with Arne Jacobsen design
                 </p>
-                <button class="kubeflex-button my-3">Read more</button>
+                <button class="btn-kubeflex my-3">Read more</button>
             </div>
         </div>
 
     </section>
-    <section id="activity" class="activity-section inner-col-12">
-        <div class="activity-header inner-col-10">
-            <p id="activity-header">Activities and Workshops</p>
-            <div class="view-all-activities inner-col-1">
+
+    <section id="activity" class="section-multiple-image inner-col-12">
+        <div class="box-header inner-col-10">
+            <h1>Activities and Workshops</h1>
+            <div class="view-all inner-col-1">
                 <p>View All</p>
                 <img src="images/sidewaysarrow.svg" alt="">
             </div>
         </div>
-        <div class="activity-main-container inner-col-10">
+        <div class="main-container inner-col-10">
 
 
-            <div data-aos="zoom-in-down" class="activity-container1">
-                <div class="activity-info">
+            <div id="activity-container1" class="box-container">
+                <div class="box-info">
                     <h1>Course in Croquis Drawing</h1>
                     <p>22 SEPT 2021 - 15 AUG 2021</p>
                 </div>
             </div>
-            <div data-aos="zoom-in-up" class="activity-container2">
-                <div class="activity-info">
+            <div id="activity-container2" class="box-container">
+                <div class="box-info">
                     <h1>Present Art Experience</h1>
                     <p>22 SEPT 2021 - 15 NOV 2022</p>
                 </div>
             </div>
-            <div data-aos="zoom-in-right" class="activity-container3">
-                <div class="activity-info">
+            <div id="activity-container3" class="box-container">
+                <div class="box-info">
                     <h1>Your Exhibition</h1>
                     <p>Permanent Activity</p>
                 </div>
             </div>
         </div>
     </section>
-    <section id="cafe" class="cafe-section inner-col-12">
-        <div class="cafe-main-container inner-col-10">
-            <div data-aos="fade-left" data-aos-offset="600" data-aos-easing="ease-in-sine"
-                class="cafe-content inner-col-4">
+
+    <section id="cafe" class="section-single-image inner-col-12">
+        <div id="reverse-column" class="main-container inner-col-10">
+            <div class="row-content inner-col-4">
                 <h1>Cafe Gustav Lind</h1>
                 <p class="py-4">The experience of Trapholt continues naturally when you step into
                     Gustav Lind, which is Trapholt’s own little gastronomic experience.
@@ -225,17 +242,16 @@
                     Gustav Lind Trapholt is an offer for the museum’s guests and can
                     therefore only be visited by paid admission to Trapholt.
                 </p>
-                <button class="kubeflex-button my-3">Read more</button>
+                <button class="btn-kubeflex my-3">Read more</button>
             </div>
-            <img data-aos="fade-right" data-aos-offset="600" data-aos-easing="ease-in-sine" src="images/cafe.jpg"
-                alt="">
+            <img class="inner-col-7" src="images/cafe.jpg" alt="">
         </div>
-
     </section>
-    <section id="shop" class="shop-section inner-col-12">
-        <div class="shop-main-container inner-col-10">
-            <img data-aos="fade-left" data-aos-offset="600" data-aos-easing="ease-in-sine" src="images/shop.png" alt="">
-            <div data-aos="fade-right" class="shop-content inner-col-4">
+
+    <section id="shop" class="section-single-image inner-col-12">
+        <div class="main-container inner-col-10">
+            <img class="inner-col-7" src="images/shop.png" alt="">
+            <div class="row-content inner-col-4">
                 <h1>Arne Jacobsen Kubeflex</h1>
                 <p><span>Permanent Exhibition </span></p>
                 <p>The house is called Kubeflex, as it consists of cube-shaped modules that can be
@@ -246,10 +262,9 @@
                     summer home, and since 2005 it has belonged to Trapholt. The house is the only
                     one of its kind and is decorated with Arne Jacobsen design
                 </p>
-                <button class="kubeflex-button my-3">Read more</button>
+                <button class="btn-kubeflex my-3">Read more</button>
             </div>
         </div>
-
     </section>
 
     <section id="webpage-footer" class="footer-section inner-col-12">
