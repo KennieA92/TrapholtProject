@@ -1,0 +1,25 @@
+// _mobile.scss
+@media(max-width: 1024px) {
+  header{
+    .info-bar {
+      .top-info-panel{
+        .titles{
+        }
+        .top-info-panel-language{
+        }
+      }
+    }
+  }
+  .hero-section{
+    .hero-info{
+    .hero-info-panel {
+      h1{
+        font-size: 55px;
+      }
+    }
+  }
+  .btn-covid {
+    margin-bottom: 100px;
+  }
+}
+}

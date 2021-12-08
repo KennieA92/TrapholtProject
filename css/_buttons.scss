@@ -21,3 +21,43 @@
     background-color: $secondary-color;
     color: $primary-color;
   }
+
+  .btn-ticket{
+    width: 401px;
+    min-height: 80px;
+    background-color: $tertiary-color;
+    color: $primary-color;
+    border-style: none;
+    font-size: 30px;
+  }
+
+  .btn-covid{    
+    min-width: 260px;
+    padding: 22px 0px;
+    margin-bottom: 104px;
+    font-size: 24px;
+    border-color: $tertiary-color;
+    border-style: dashed;
+    color: $tertiary-color;
+    background-color: #00000000;
+  }
+
+  .btn-mobile-covid {
+    width: 80vw;
+    height: 50px;
+    padding: 10px 0px;
+    margin-bottom: 0px;
+    font-size: 24px;
+    border-color: $tertiary-color;
+    border-style: dashed;
+    color: $tertiary-color;
+    background-color: #00000000;
+  }
+
+  .btn-kubeflex {
+    border: solid 1px #b89767;
+    width: 164px;
+    height: 40px;
+    color: $tertiary-color;
+    font-size: 15px;
+  }
