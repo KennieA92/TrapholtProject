@@ -1909,6 +1909,7 @@ header .nav-bar .nav-menu-box .nav-utilities-panel .language-support a {
 .ticket-class {
     display: flex;
     width: 100%;
+    justify-content: flex-start;
   }
 
   .tickets-bottom {
