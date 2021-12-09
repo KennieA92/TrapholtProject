@@ -400,7 +400,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-width: 600px;
+  min-width: 320px;
 }
 body.dark {
   background-color: #000000;
