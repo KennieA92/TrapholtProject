@@ -134,7 +134,7 @@
     height: 1514px;
     padding-bottom: 20px;
     .main-container{
-      height: 90%;
+      max-height: 90%;
       align-items: center;
       justify-content: space-between;
     }
@@ -153,6 +153,8 @@
     
   }
     
+
+
   }
 
   .section-single-image {
@@ -179,5 +181,27 @@
       }
     }
   }
+  }
+  .footer-section{
+    height: fit-content;
+    .footer-main-container{
+      padding: 20px 0px;
+      width: 80vw;
+      .footer-info-section {
+        width: 80vw;
+        .footer-logo {
+          width: 80vw;
+        }
+        .footer-openinghours {
+          width: 80vw;
+        }
+        .footer-address{
+          width: 80vw;
+        }
+      }
+      .footer-subscription{
+        width: 80vw;
+      }
+    }
   }
 }

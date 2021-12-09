@@ -319,10 +319,9 @@ header {
     height: 361px;
     justify-content: center;
     align-items: center;
+    width: $full-width;
     background: $secondary-color;
     color: $primary-color;
-    max-width: $full-width; // Change for full width or a set width -> in config file
-    width: $centered-width;
 }
 @import 'utilities';
 @import 'buttons';
