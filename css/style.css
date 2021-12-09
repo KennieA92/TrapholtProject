@@ -2478,6 +2478,7 @@ body.dark .btn-primary:hover, body.dark .btn-secondary:hover, .btn-primary:hover
     display: -ms-flexbox;
     display: flex;
     width: 100%;
+    justify-content: flex-start;
   }
   .tickets-bottom {
     padding-top: 16px;
