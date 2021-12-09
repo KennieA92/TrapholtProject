@@ -932,7 +932,7 @@ header .nav-bar .nav-menu-box .nav-utilities-panel .language-support a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  z-index: -5555;
+  z-index: -5;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -2079,7 +2079,7 @@ body.dark .btn-primary:hover, body.dark .btn-secondary:hover, .btn-primary:hover
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    height: 945px;
+    height: 965px;
     padding-top: 20px;
     -webkit-box-pack: start;
         -ms-flex-pack: start;
@@ -2093,7 +2093,7 @@ body.dark .btn-primary:hover, body.dark .btn-secondary:hover, .btn-primary:hover
   }
   .hero-section .hero-info video {
     position: static;
-    height: 65vw;
+    height: 60vw;
     -webkit-filter: brightness(100%);
             filter: brightness(100%);
   }
