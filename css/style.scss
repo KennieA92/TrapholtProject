@@ -121,7 +121,6 @@ header {
             }
             &:hover{
                 .nav-submenu{
-                    z-index: 5;
                     top: 40px;
                     display:flex;
                     flex-direction: column;
@@ -184,6 +183,7 @@ header {
         }
         .hero-info-panel{
             display: flex;
+            z-index: -5555;
             flex-direction: column;
             justify-content: flex-end;
             max-width: 761px;

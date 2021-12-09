@@ -829,7 +829,6 @@ header .nav-bar .nav-menu-box .nav-menu .nav-menu-item .nav-submenu .nav-submenu
 }
 
 header .nav-bar .nav-menu-box .nav-menu .nav-menu-item:hover .nav-submenu {
-  z-index: 5;
   top: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -933,6 +932,7 @@ header .nav-bar .nav-menu-box .nav-utilities-panel .language-support a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  z-index: -5555;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -2478,7 +2478,9 @@ body.dark .btn-primary:hover, body.dark .btn-secondary:hover, .btn-primary:hover
     display: -ms-flexbox;
     display: flex;
     width: 100%;
-    justify-content: flex-start;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
   }
   .tickets-bottom {
     padding-top: 16px;
