@@ -34,4 +34,106 @@
         }      
     }      
     }
+
+    .ticket-class {
+      width: $centered-width;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+     
+    }
   }
+
+  @media only screen and (max-width: 1230px){
+
+    main{
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      // flex-direction: column;
+      flex-wrap: wrap;
+    }
+
+    .tickets-top,
+    .tickets-bottom {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .tickets-bottom {
+      padding-top: 16px;
+    }
+
+
+  }
+
+
+
+
+   @media only screen and (max-width: 1030px){
+
+    main{
+      width: $full-width;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+
+    .tickets-top,
+    .tickets-bottom,
+    .ticket-class {
+      display: flex;
+      width: 100%;
+    }
+
+    .tickets-bottom {
+      padding-top: 16px;
+    }
+
+    .empty-ticket {
+      display: none;
+    }
+
+    .footer-main-container {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .footer-openinghours {
+      padding-bottom: 0px;
+    }
+}
+
+
+@media only screen and (max-width: 1350px){
+  .footer-main-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .footer-subscription {
+    display: flex;
+    width: 50%;
+  }
+
+  form {
+    
+    input{
+        &[type=email] {
+          display: flex;
+          width: 100%;
+        }
+      }
+  
+      &[type=submit]{
+       
+        width: 50%;
+       
+      }
+  
+    }
+}
+

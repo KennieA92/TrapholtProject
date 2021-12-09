@@ -21,15 +21,21 @@ body {
   }
 }
 
+main {
+  width: $full-width;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
 .tickets-container {
   display: flex;
-  width: $centered-width ;
+  width: 80% ;
   align-items: center;
   justify-content: center;
   color: $primary-color;
-  flex-direction: column;
-
- 
+  flex-direction: column; 
 }
 
 .ticket-class {
