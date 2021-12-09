@@ -256,7 +256,7 @@ body {
 
 .footer-main-container {
   display: flex;
-  width: 100%;
+  width: 80%;
   height: 100%;
 }
 
@@ -264,8 +264,7 @@ body {
   display: flex;
   align-items: flex-start;
   justify-content: center;
-  padding-top: 104px;
-  padding-bottom: 104px;
+  align-items: center;
 }
 
 .footer-logo {
@@ -274,6 +273,7 @@ body {
   align-items: flex-start;
   width: 100%;
   flex-direction: column;
+  padding-bottom: 20px;
 }
 
 .footer-logo-section {
@@ -311,6 +311,7 @@ body {
   justify-content: flex-start;
   width: 100%;
   flex-direction: column;
+  padding-bottom: 26px;
 }
 
 .footer-opening-hrs-title,
@@ -773,10 +774,9 @@ header .nav-bar .nav-menu-box .nav-utilities-panel .language-support a {
   height: 361px;
   justify-content: center;
   align-items: center;
+  width: 100%;
   background: #000000;
   color: #f5f5f5;
-  max-width: 100%;
-  width: 80vw;
 }
 
 .m-1 {
@@ -1643,7 +1643,7 @@ header .nav-bar .nav-menu-box .nav-utilities-panel .language-support a {
     padding-bottom: 20px;
   }
   .section-multiple-image .main-container {
-    height: 90%;
+    max-height: 90%;
     align-items: center;
     justify-content: space-between;
   }
@@ -1689,6 +1689,31 @@ header .nav-bar .nav-menu-box .nav-utilities-panel .language-support a {
     font-size: 16px;
     padding-bottom: 5px;
     font-weight: 500;
+  }
+
+  .footer-section {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .footer-section .footer-main-container {
+    padding: 20px 0px;
+    width: 80vw;
+  }
+  .footer-section .footer-main-container .footer-info-section {
+    width: 80vw;
+  }
+  .footer-section .footer-main-container .footer-info-section .footer-logo {
+    width: 80vw;
+  }
+  .footer-section .footer-main-container .footer-info-section .footer-openinghours {
+    width: 80vw;
+  }
+  .footer-section .footer-main-container .footer-info-section .footer-address {
+    width: 80vw;
+  }
+  .footer-section .footer-main-container .footer-subscription {
+    width: 80vw;
   }
 }
 @media (max-width: 480px) {
