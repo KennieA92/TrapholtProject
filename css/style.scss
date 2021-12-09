@@ -199,8 +199,8 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    height: 520px;
-    width: 520px;
+    max-width: 800px;
+    min-width: 32%;
     .box-info {
         background-color: #03030355;
         display: flex;
@@ -276,7 +276,8 @@ header {
     .main-container{
         display: flex;
         justify-content: space-between;
-        height: 536px;        
+        min-height: 536px;   
+        max-height: 750px;   
         
     }
 }
@@ -291,6 +292,7 @@ header {
         justify-content: space-between;
         img{
             min-height: 500px;
+            max-height: 650px;
             object-fit: cover;
             background-position: center;
         }
