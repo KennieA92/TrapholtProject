@@ -5,12 +5,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Trapholt Museum</title>
     <link rel="stylesheet" href="css/style.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="js/main.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
+    <script src="https://kit.fontawesome.com/fcc9bbfba0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -267,37 +268,63 @@
         </div>
     </section>
 
-    <section id="webpage-footer" class="footer-section inner-col-12">
-        <div class="footer-main-container inner-col-10">
-            <div class="footer-company-info">
-                <img src="images/whitelogo.svg" alt="">
-                <p></p>
-                <div class="social-media-buttons"></div>
-            </div>
-            <div class="footer-openinghours">
-                <p></p>
-                <p></p>
-            </div>
-            <div class="footer-contacts">
-                <p></p>
-                <div class="location-info">
-                    <img src="" alt="">
-                    <p></p>
+    <section id="webpage-footer" class="footer-section outer-col-12 g-4">
+        <div class="footer-main-container inner-col-8">
+            <div class="footer-info-section inner-col-12 g-4">
+                <div class="footer-logo inner-col-4">
+                    <div class="footer-logo-section">
+                        <div class="footer-logo-image">
+                            <img src="/images/whitelogo.svg" alt="">
+                        </div>
+                        <div class="footer-logo-text">
+                            Trapholt
+                        </div>
+                    </div>
+                    <div class="footer-copyright py-4">
+                       <p>Copyright Trapholt 2021</p> 
+                    </div>
+                    <div class="footer-some">
+                        <i class="fa fa-tripadvisor" style="font-size:24px"></i>
+                        <i class="fab fa-linkedin" style="font-size:24px"></i>
+                        <i class="fab fa-youtube" style="font-size:24px"></i>
+                        <i class="fab fa-instagram-square" style="font-size:24px"></i>
+                        <i class="fab fa-facebook-square" style="font-size:24px"></i>
+                    </div>
                 </div>
-                <div class="email-info">
-                    <img src="" alt="">
-                    <p></p>
+                <div class="footer-openinghours inner-col-4">
+                    <span class="footer-opening-hrs-title py-4">Opening Hours</span>
+                    <span class="footer-opening-hrs-detail">Tuesday to Sunday 10:00 - 17:00 </span>
+                    <span class="py-4">Monday CLOSED</span>
+                
                 </div>
-                <div class="phone-info">
-                    <img src="" alt="">
-                    <p></p>
+                <div class="footer-address inner-col-4">
+                    <span class="footer-address-title py-4">Address & Contact Details</span>
+                    <span class="footer-address-detail">
+                        <span> <i class="fas fa-map-marker-alt"></i></span>
+                        
+                        <span> Trapholt Æblehaven 23, 
+                            6000&nbsp;Kolding,&nbsp;Denmark </span>
+                       
+                    </span>
+                    <span class="footer-address-detail py-4">
+                        <i class="fas fa-envelope"></i> <a href="mailto:kunstmuseum@trapholt.dk">kunstmuseum@trapholt.dk</a>
+                    </span>
+                    <span class="footer-address-detail">
+                        <i class="fas fa-phone-alt"></i> +45 76 30 05 30
+                    </span>
                 </div>
             </div>
-            <div class="footer-subscribe">
-                <h1></h1>
-                <input type="text" placeholder="Search..">
+        </div>  
+
+        <div class="footer-subscription inner-col-4">
+            <div class="footer-subs-title py-4">
+             Subscribe in our mailing list to get updates
             </div>
-        </div>
+            <form>
+                <input type="email" placeholder="Email address">
+                <input type="submit" value="SUBSCRIBE">
+              </form>
+         </div>
     </section>
     <script>
         AOS.init();
