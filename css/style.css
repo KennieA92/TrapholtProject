@@ -1370,6 +1370,7 @@ header .nav-bar .nav-menu-box .nav-utilities-panel .language-support a {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 35px;
 }
 
 .btn-covid {
