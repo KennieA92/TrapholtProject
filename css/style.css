@@ -919,7 +919,7 @@ header .nav-bar .nav-menu-box .nav-utilities-panel .language-support a {
           justify-content: flex-end;
   max-width: 761px;
   height: 374px;
-  margin-bottom: 104px;
+  margin-bottom: 180px;
 }
 
 .hero-section .hero-info .hero-info-panel h1 {
@@ -1753,7 +1753,7 @@ body.dark .btn-primary:hover, body.dark .btn-secondary:hover, .btn-primary:hover
 .btn-covid {
   min-width: 260px;
   padding: 22px 0px;
-  margin-bottom: 104px;
+  margin-bottom: 180px;
   font-size: 24px;
   border-color: #b89767;
   border-style: dashed;
