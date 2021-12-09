@@ -28,8 +28,8 @@
 }      
 
   header{
-    background-color: $secondary-color;
-    height: 56px;
+    background-color: $primary-color;
+    height: 75px;
      .info-bar {
        width: 80vw;
        display: flex;
@@ -39,27 +39,28 @@
          display: flex;
          flex-direction: row;
          align-items: center;
+         height: 100%;
          width: 50vw;
         .logo {
           display: none;
         }
         .burgermenu{
           display: flex;
-          width: 27px;
-          height: 18px;
+          width: 32px;
+          height: 22px;
         }
         .mobile-logo{
-          width: 30px;
+          width: 200px;
           margin-left: 25px;
           display: flex;
           img{
-            width: 40px;
+            width: 200px;
             }
         }
        }
        
       .top-info-panel{
-        width: 40px;
+        width: 70px;
         .titles{
           display: none;
         }
@@ -70,12 +71,15 @@
           display: flex;
           justify-content: flex-end;
           align-items: center;
-          font-size: 24px;
-          color: $primary-color;
+          font-size: 26px;
+          p{
+            font-size: 26px;
+          }
+          color: $secondary-color;
         }
         img {
-          height: 9px;
-          width: 18px;
+          height: 13px;
+          width: 24px;
           margin-bottom: 5px;
         }
       }
@@ -89,7 +93,8 @@
   }
   .hero-section{
     display: flex;
-    height: 925px;
+    height: 945px;
+    padding-top: 20px;
     justify-content: flex-start;
     .hero-info{        
       align-items: center;
