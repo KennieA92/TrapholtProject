@@ -2017,7 +2017,7 @@ body.dark .btn-primary:hover, body.dark .btn-secondary:hover, .btn-primary:hover
         -ms-flex-align: center;
             align-items: center;
     height: 100%;
-    width: 50vw;
+    width: 100%;
   }
   header .info-bar .logo-container .logo {
     display: none;
@@ -2030,7 +2030,7 @@ body.dark .btn-primary:hover, body.dark .btn-secondary:hover, .btn-primary:hover
     height: 22px;
   }
   header .info-bar .logo-container .mobile-logo {
-    width: 200px;
+    width: 190px;
     margin-left: 25px;
     display: -webkit-box;
     display: -ms-flexbox;
