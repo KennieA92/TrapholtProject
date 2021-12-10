@@ -66,13 +66,22 @@ header {
       justify-content: space-between;
       align-items: center;
       height: 120px;
+      .logo-container{
+          height: 120px;
       .logo{
           height: 120px;
           max-width: 330px;
           a{
               display: flex;
           }
+          @-moz-document url-prefix() {
+            width: 300px;
+            a{
+                width:100%
+            }
+          }
       }
+    }
       .top-info-panel {
           display: flex;
           justify-content: flex-end;

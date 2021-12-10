@@ -738,15 +738,28 @@ header .info-bar {
   height: 120px;
 }
 
-header .info-bar .logo {
+header .info-bar .logo-container {
+  height: 120px;
+}
+
+header .info-bar .logo-container .logo {
   height: 120px;
   max-width: 330px;
 }
 
-header .info-bar .logo a {
+header .info-bar .logo-container .logo a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+@-moz-document url-prefix() {
+  header .info-bar .logo-container .logo {
+    width: 300px;
+  }
+  header .info-bar .logo-container .logo a {
+    width: 100%;
+  }
 }
 
 header .info-bar .top-info-panel {
