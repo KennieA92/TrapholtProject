@@ -2016,6 +2016,9 @@ body.dark .btn-primary:hover, body.dark .btn-secondary:hover, .btn-primary:hover
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     height: 100%;
     width: 100%;
   }
@@ -2030,14 +2033,17 @@ body.dark .btn-primary:hover, body.dark .btn-secondary:hover, .btn-primary:hover
     height: 22px;
   }
   header .info-bar .logo-container .mobile-logo {
-    width: 190px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
     margin-left: 25px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
   header .info-bar .logo-container .mobile-logo img {
-    width: 200px;
+    width: 175px;
   }
   header .info-bar .top-info-panel {
     width: 70px;
@@ -2385,6 +2391,18 @@ body.dark .btn-primary:hover, body.dark .btn-secondary:hover, .btn-primary:hover
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  .logo-container {
+    width: 100%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .logo-container .mobile-logo {
+    width: 100%;
+  }
+  .logo-container .mobile-logo img {
+    width: 150px;
   }
   .box-container {
     height: 200px;
