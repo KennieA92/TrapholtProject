@@ -6,6 +6,7 @@
 @import 'footer';
 
 
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -97,6 +98,7 @@ header {
   }
   
   .nav-bar {
+    z-index: 1;
     position: sticky;
     display: flex;
     align-items: center;
@@ -104,45 +106,46 @@ header {
     height: 64px;
     background-color: $secondary-color;    
     .nav-menu-box{
+      
         li{
             list-style-type: none;
         }
         display: flex;
         align-items: center;
         justify-content: space-between;
+
         .nav-menu{    
             display: flex;   
             justify-content: space-between;
             width: fit-content;
             
-        .nav-menu-item {
-            position: relative;
-            a {
-                display: block;
-                padding: 10px;
-              } 
-            .nav-submenu {
-                display: none;
-                .nav-submenu-item {
-                    padding-top: 10px;
-                    padding-bottom: 2px;
+            .nav-menu-item {
+                position: relative;
+                a {
+                    display: block;
+                    padding: 10px;
+                } 
+                .nav-submenu {
+                    display: none;
+                    .nav-submenu-item {
+                        padding-top: 10px;
+                        padding-bottom: 2px;
+                    }
+                }
+                &:hover{
+                    .nav-submenu{
+                        top: 40px;
+                        display:flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        flex-wrap: wrap;
+                        width: max-content;
+                        list-style-type: none;  
+                        position: absolute;
+                        background-color: $secondary-color; 
+                    }
                 }
             }
-            &:hover{
-                .nav-submenu{
-                    top: 40px;
-                    display:flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    flex-wrap: wrap;
-                    width: max-content;
-                    list-style-type: none;  
-                    position: absolute;
-                    background-color: $secondary-color; 
-                    
-                }
-            }
-        }
         }   
         .nav-utilities-panel {
             display: flex;
@@ -192,7 +195,7 @@ header {
         }
         .hero-info-panel{
             display: flex;
-            z-index: -5;
+            // z-index: -5;
             flex-direction: column;
             justify-content: flex-end;
             max-width: 761px;

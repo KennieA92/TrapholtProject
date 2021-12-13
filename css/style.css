@@ -536,6 +536,7 @@ header .info-bar .top-info-panel .content {
   padding-left: 10px;
 }
 header .nav-bar {
+  z-index: 1;
   position: -webkit-sticky;
   position: sticky;
   display: flex;
@@ -637,7 +638,6 @@ header .nav-bar .nav-menu-box .nav-utilities-panel .language-support a {
 }
 .hero-section .hero-info .hero-info-panel {
   display: flex;
-  z-index: -5;
   flex-direction: column;
   justify-content: flex-end;
   max-width: 761px;
