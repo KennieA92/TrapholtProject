@@ -11,6 +11,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0px; 
+  scroll-behavior: smooth;
 }
 
 body {
@@ -23,6 +24,7 @@ body {
   align-items:center;
   @import 'dark'; // For dark-mode changes, go to _dark.scss
   min-width: 320px;
+  
 }
 
 a {
@@ -120,6 +122,10 @@ header {
             width: fit-content;
             
             .nav-menu-item {
+                :hover {
+                    color: $tertiary-color;
+                }
+
                 position: relative;
                 a {
                     display: block;
@@ -133,6 +139,7 @@ header {
                     }
                 }
                 &:hover{
+                    
                     .nav-submenu{
                         top: 40px;
                         display:flex;
